@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing del live de TikTok — Lineage 2">
+  <title id="page-title">Live TikTok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="live-badge" id="live-badge">
+      <span class="live-dot"></span>
+      EN VIVO
+    </div>
+    <span class="topbar-game" id="topbar-game">Lineage 2</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">TikTok Live</p>
+      <h1 class="hero-title" id="streamer-name">Streamer</h1>
+      <p class="hero-tagline" id="hero-tagline">Directos en TikTok</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" id="btn-watch" href="#" target="_blank" rel="noopener noreferrer">
+          Ver live en TikTok
+        </a>
+        <a class="btn btn-secondary" id="btn-follow" href="#" target="_blank" rel="noopener noreferrer">
+          Seguir <span id="btn-username">@usuario</span>
+        </a>
+      </div>
+
+      <p class="hero-schedule" id="hero-schedule"></p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h2>Qué verás en el live</h2>
+        <p>PvP, farmeo, clanes y momentos épicos de <strong id="card-game">Lineage 2</strong>. Entra al directo y participa en el chat.</p>
+      </article>
+      <article class="card">
+        <h2>Cómo unirte</h2>
+        <p>Toca el botón de arriba, abre TikTok y únete al live. Activa la campana para no perderte la próxima transmisión.</p>
+      </article>
+      <article class="card card-accent">
+        <h2>Próximo paso</h2>
+        <p>Esta es la base del proyecto <strong id="project-id">#1</strong>. Personaliza nombre, links y colores en <code>config.js</code>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Landing base · Proyecto <span id="footer-id">1</span>-PAGINAFREE</p>
+    <a id="footer-link" href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
