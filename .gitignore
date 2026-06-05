@@ -1,3 +1,7 @@
-﻿# Git
-.DS_Store
+﻿.DS_Store
 Thumbs.db
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/data/contacts.json

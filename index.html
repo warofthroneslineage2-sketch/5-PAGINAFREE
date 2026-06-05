@@ -15,53 +15,115 @@
   <div class="bg-glow" aria-hidden="true"></div>
   <div class="bg-grid" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <span class="brand-badge" id="business-type">Emprendimiento</span>
-    <span class="topbar-note">Pagina gratis · PAGINAFREE</span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio">
+        <span class="logo-name" id="nav-business-name">Emprendimiento</span>
+        <span class="logo-type" id="nav-business-type">Rubro</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <p class="hero-kicker">Tu negocio online</p>
-      <h1 class="hero-title" id="business-name">Emprendimiento</h1>
-      <p class="hero-tagline" id="hero-tagline">Descripcion corta del negocio</p>
-
-      <div class="hero-actions">
-        <a class="btn btn-primary" id="btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">
-          <span id="whatsapp-label">Contactar por WhatsApp</span>
-        </a>
-        <a class="btn btn-secondary hidden" id="btn-instagram" href="#" target="_blank" rel="noopener noreferrer">
-          Instagram
-        </a>
-        <a class="btn btn-secondary hidden" id="btn-tiktok" href="#" target="_blank" rel="noopener noreferrer">
-          TikTok
-        </a>
+    <section class="hero section" id="inicio">
+      <div class="container hero-inner">
+        <p class="hero-kicker">Tu negocio online</p>
+        <h1 class="hero-title" id="business-name">Emprendimiento</h1>
+        <p class="hero-tagline" id="hero-tagline">Descripcion corta del negocio</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">
+            <span id="whatsapp-label">Contactar por WhatsApp</span>
+          </a>
+          <a class="btn btn-secondary" href="#contacto">Formulario de contacto</a>
+        </div>
+        <p class="hero-note" id="hero-note"></p>
       </div>
-
-      <p class="hero-note" id="hero-note"></p>
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h2>Que hacemos</h2>
-        <p id="about-text">Descripcion del emprendimiento.</p>
-      </article>
-      <article class="card">
-        <h2>Como pedir</h2>
-        <p>Toca WhatsApp, contanos que necesitas y te respondemos con precio, stock o turno disponible.</p>
-      </article>
-      <article class="card card-accent">
-        <h2>Tu pagina</h2>
-        <p>Proyecto <strong id="project-id">#1</strong> de PAGINAFREE. Personaliza nombre, rubro, links y colores en <code>config.js</code>.</p>
-      </article>
+    <section class="section section-alt" id="nosotros">
+      <div class="container split">
+        <div>
+          <p class="section-kicker">Nosotros</p>
+          <h2 class="section-title">Conoce nuestro emprendimiento</h2>
+        </div>
+        <div>
+          <p class="section-text" id="about-text">Descripcion del emprendimiento.</p>
+          <ul class="info-list">
+            <li><strong>Telefono:</strong> <span id="info-phone">-</span></li>
+            <li><strong>Email:</strong> <a id="info-email-link" href="#">-</a></li>
+            <li><strong>Ubicacion:</strong> <span id="info-address">-</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <p class="section-kicker">Servicios</p>
+        <h2 class="section-title">Lo que ofrecemos</h2>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacto">
+      <div class="container contact-layout">
+        <div>
+          <p class="section-kicker">Contacto</p>
+          <h2 class="section-title">Escribinos</h2>
+          <p class="section-text">Completa el formulario o escribinos directo por WhatsApp.</p>
+          <div class="social-links">
+            <a class="btn btn-secondary hidden" id="btn-instagram" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a class="btn btn-secondary hidden" id="btn-tiktok" href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a class="btn btn-secondary hidden" id="btn-facebook" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>
+            Nombre
+            <input type="text" name="name" required autocomplete="name" placeholder="Tu nombre">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required autocomplete="email" placeholder="tu@email.com">
+          </label>
+          <label>
+            Telefono
+            <input type="tel" name="phone" autocomplete="tel" placeholder="Opcional">
+          </label>
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" required placeholder="Que necesitas?"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Enviar consulta</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p><span id="footer-business">Emprendimiento</span> · Proyecto <span id="footer-id">1</span>-PAGINAFREE</p>
-    <a id="footer-whatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand"><span id="footer-business">Emprendimiento</span></p>
+        <p class="footer-meta">Proyecto <span id="footer-id">1</span>-PAGINAFREE · Pagina web gratis</p>
+      </div>
+      <div class="footer-links">
+        <a id="footer-whatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a id="footer-email" href="#">Email</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
