@@ -1,20 +1,21 @@
 ﻿# 5-PAGINAFREE
 
-Landing base para live de TikTok (tematica Lineage 2 / gaming).
+Landing gratis para emprendimientos (PAGINAFREE).
 
 ## Personalizar
 
 Edita `config.js`:
 
-- `streamerName` - nombre del streamer
-- `tiktokUsername` - usuario de TikTok
-- `tiktokUrl` - link al perfil o live
-- `tagline`, `schedule`, `gameName`
-- `accentColor`, `liveColor`
+- `businessName` - nombre del negocio
+- `businessType` - rubro (ej. reposteria, indumentaria)
+- `tagline` - frase corta
+- `about` - que vende o que servicio ofrece
+- `whatsappUrl` - link wa.me con codigo de pais
+- `instagramUrl`, `tiktokUrl` - opcionales (si estan vacios no se muestran)
+- `contactNote` - horario, zona, envios
+- `accentColor`, `primaryColor`
 
 ## Ver en local
-
-Abre `index.html` en el navegador o usa un servidor estatico:
 
 ```bash
 npx serve .
@@ -22,5 +23,5 @@ npx serve .
 
 ## GitHub Pages
 
-1. Sube este repo a GitHub como `5-PAGINAFREE`
-2. Settings > Pages > Deploy from branch > `main` / root
+Settings > Pages > branch `main` / root
+
